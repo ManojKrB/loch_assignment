@@ -1,0 +1,52 @@
+.notificationCard {
+  border: 1px solid grey;
+  background-color: white;
+  width: 189.7px;
+  height: 171.5px;
+  margin: 10px;
+  border-radius: 8.2px;
+}
+
+.notificationCardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-top: 14px;
+  margin-left: 14px;
+}
+
+.checkbox {
+  margin-top: 14px;
+  margin-right: 13.7px;
+}
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cohortContainer {
+  flex: 1;
+  border: 1px solid red;
+}
+
+.dashboardTextContainer {
+  flex: 1;
+  border: 1px solid red;
+}
+
+@media (max-width: 600px) {
+  .notificationCard {
+    border: 1px solid grey;
+    background-color: white;
+    width: 189.7px;
+    height: 171.5px;
+    margin: 10px;
+    border-radius: 8.2px;
+    overflow: a;
+  }
+}
