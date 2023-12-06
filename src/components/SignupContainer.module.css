@@ -109,3 +109,11 @@
   word-wrap: break-word;
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 600px) {
+  .helperText {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+}

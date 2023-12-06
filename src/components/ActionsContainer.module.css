@@ -178,6 +178,11 @@
   text-align: right;
 }
 
+.cohortContainer {
+  height: 250px;
+  width: 50%;
+}
+
 @media (max-width: 600px) {
   .dashboardContainer {
     display: flex;
@@ -185,12 +190,27 @@
   }
 
   .cohortContainer {
-    height: 250px;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .dashboardTextContainer {
     width: 100%;
+  }
+
+  .dashboardDescription {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .dashboardTextBottomContainer {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .eyeIconContainer {
+    justify-content: flex-start;
   }
 }
 
@@ -198,14 +218,21 @@
   height: 350px;
 }
 
-.cohortContainer {
-  height: 250px;
-  width: 50%;
+.testimonials {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 62px;
+  color: #f2f2f2;
+  font-size: 25px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 30px;
+  word-wrap: break-word;
 }
 
 @media (max-width: 600px) {
   .testimonials {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     color: #f2f2f2;
@@ -214,7 +241,9 @@
     font-weight: 500;
     line-height: 30px;
     margin-top: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .testimonialsContainer {
@@ -236,18 +265,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-}
-
-.testimonials {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 62px;
-  color: #f2f2f2;
-  font-size: 25px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 30px;
-  word-wrap: break-word;
 }
 
 .testimonialCardsAndIcon {
