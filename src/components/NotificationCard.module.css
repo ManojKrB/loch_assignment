@@ -5,6 +5,8 @@
   height: 171.5px;
   margin: 10px;
   border-radius: 8.2px;
+  user-select: none;
+  touch-action: pan-x;
 }
 
 .notificationCardHeader {
@@ -31,12 +33,12 @@
 
 .cohortContainer {
   flex: 1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .dashboardTextContainer {
   flex: 1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @media (max-width: 600px) {

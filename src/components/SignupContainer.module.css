@@ -18,6 +18,11 @@
   /* border: 1px solid red; */
 }
 
+.errorMessage {
+  color: red;
+  font-size: 12px;
+}
+
 .signupText {
   color: #b0b1b3;
   font-size: 39px;
@@ -48,6 +53,10 @@
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
+}
+
+.inputContainer:hover {
+  border-color: blue;
 }
 
 .getStartedButtonContainer {

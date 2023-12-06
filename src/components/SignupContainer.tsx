@@ -1,6 +1,15 @@
+import { useMemo, useState } from "react";
 import styles from "./SignupContainer.module.css";
 
 const SignupContainer = () => {
+  const [email, setEmail] = useState("");
+  const isInvalid = useMemo(() => {
+    if (email.length === 0) {
+      return false;
+    }
+    return !(email.includes("@") && email.includes("."));
+  }, [email]);
+
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
@@ -9,17 +18,33 @@ const SignupContainer = () => {
             Sign up for exclusive access
           </span>
         </div>
-        <div className={styles.inputOuterContainer}>
-          <input
-            className={styles.inputContainer}
-            placeholder="Your email address"
-          />
-        </div>
-        <div className={styles.getStartedButtonContainer}>
-          <button className={styles.getStartedButton}>
-            <span className={styles.getStartedButtonText}>Get started</span>
-          </button>
-        </div>
+        <form
+          action="https://app.loch.one/welcome"
+          // onSubmit={(e) => {
+          //   e.preventDefault();
+          // }}
+        >
+          <div className={styles.inputOuterContainer}>
+            <input
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              className={styles.inputContainer}
+              placeholder="Your email address"
+            />
+          </div>
+          {isInvalid && (
+            <span className={styles.errorMessage}>
+              Please enter a valid email
+            </span>
+          )}
+          <div className={styles.getStartedButtonContainer}>
+            <button className={styles.getStartedButton} type="submit">
+              <span className={styles.getStartedButtonText}>Get started</span>
+            </button>
+          </div>
+        </form>
       </div>
 
       <div className={styles.helperTextContainer}>
