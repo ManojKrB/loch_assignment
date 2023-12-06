@@ -46,11 +46,11 @@
 .actionsInnerContainer {
   width: 100%;
 
-  background: linear-gradient(
-    to bottom left,
-    rgba(0, 0, 0, 0),
-    #2f15d0,
-    rgba(30.84, 168.71, 16.87, 0.81)
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(31, 169, 17, 0.81) 15%,
+    rgba(47, 21, 208, 1) 30%,
+    rgb(0, 0, 0) 100%
   );
 }
 

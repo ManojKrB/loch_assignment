@@ -18,12 +18,7 @@ const SignupContainer = () => {
             Sign up for exclusive access
           </span>
         </div>
-        <form
-          action="https://app.loch.one/welcome"
-          // onSubmit={(e) => {
-          //   e.preventDefault();
-          // }}
-        >
+        <form action="https://app.loch.one/welcome">
           <div className={styles.inputOuterContainer}>
             <input
               required

@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
 
 .innerContainer {
@@ -15,7 +14,6 @@
   width: 326px;
   height: 94px;
   text-align: left;
-  /* border: 1px solid red; */
 }
 
 .errorMessage {
@@ -37,7 +35,6 @@
   display: flex;
   width: 340px;
   height: 59px;
-  /* border: 1px solid red; */
 }
 
 .inputContainer {
@@ -92,7 +89,6 @@
 }
 
 .helperTextContainer {
-  /* border: 1px solid red; */
   padding-top: 18px;
   padding-bottom: 18px;
   border-radius: 8px;
